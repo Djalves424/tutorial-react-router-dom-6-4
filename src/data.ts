@@ -1,4 +1,4 @@
-let invoices = [
+const invoices = [
     {
         name: "Santa Monica",
         number: 1995,
@@ -35,7 +35,7 @@ export function getInvoices() {
     return invoices;
 }
 
-export function getInvoice(number: any) {
+export function getInvoice(number: number) {
     return invoices.find(
         (invoice) => invoice.number === number
     );
